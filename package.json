@@ -1,6 +1,6 @@
 {
-  "name": "sane",
-  "version": "4.0.2",
+  "name": "@spotim/sane",
+  "version": "4.0.3",
   "description": "Sane aims to be fast, small, and reliable file system watcher.",
   "main": "index.js",
   "repository": {
@@ -46,7 +46,7 @@
     "tmp": "0.0.27"
   },
   "engines": {
-    "node": "6.* || 8.* || >= 10.*"
+    "node": "6.* || 8.* || 9.* || >= 10.*"
   },
   "bugs": {
     "url": "https://github.com/amasad/sane/issues"
