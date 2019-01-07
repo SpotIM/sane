@@ -1,5 +1,5 @@
 {
-  "name": "@spotim/sane",
+  "name": "sane",
   "version": "4.0.3",
   "description": "Sane aims to be fast, small, and reliable file system watcher.",
   "main": "index.js",
