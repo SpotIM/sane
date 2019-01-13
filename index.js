@@ -5,10 +5,6 @@ const PollWatcher = require('./src/poll_watcher');
 const WatchmanWatcher = require('./src/watchman_watcher');
 const WatchexecWatcher = require('./src/watchexec_watcher');
 
-function throwNoFSEventsSupports() {
-  throw new Error('Sane >= 4 no longer support the fsevents module.');
-}
-
 function sane(dir, options) {
   options = options || {};
   if (options.watcher) {
@@ -33,6 +29,6 @@ sane.WatchexecWatcher = WatchexecWatcher;
 
 Object.defineProperty(sane, 'FSEventsWatcher', {
   get() {
-    throwNoFSEventsSupports();
+    return sane.NodeWatcher
   },
 });
