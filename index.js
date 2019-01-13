@@ -20,8 +20,6 @@ function sane(dir, options) {
     return new WatchmanWatcher(dir, options);
   } else if (options.watchexec) {
     return new WatchexecWatcher(dir, options);
-  } else if (options.fsevents) {
-    throwNoFSEventsSupports();
   } else {
     return new NodeWatcher(dir, options);
   }
